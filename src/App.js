@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './index.scss';
 import Layout from '@nowtv/nowtv-web-toolkit/src/react/components/Layout/Layout.react';
 import Header from '@nowtv/nowtv-web-toolkit/src/react/components/Header/Header.react';
 // import Faq from '@nowtv/nowtv-web-toolkit/src/react/components/Faq/Faq.react';
