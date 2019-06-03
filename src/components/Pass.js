@@ -10,7 +10,7 @@ export default class Pass extends Component {
     return (
       <div className="pass-styles">
         <h4 className="subscription-name">{props.subscriptionName}</h4>
-        {`${props.amount} per month`}
+        <p>{`${props.amount} per month`}</p>
         <p>{`Your next payment is: ${props.amount}`}</p>
         <p>{`Due on: ${props.nextRenewalDate}`}</p>
         <Button colour="purple" href="" disabled={false}>
