@@ -9,9 +9,11 @@ export default class Pass extends Component {
     const props = this.props;
     return (
       <div className="pass-styles">
-        <h4 className="subscription-name">{props.subscriptionName}</h4>
-        <p>{`${props.amount} per month`}</p>
-        <p>{`Your next payment is: ${props.amount}`}</p>
+        <h5 className="subscription-name">{props.subscriptionName}</h5>
+        <h5>{`£${props.amount} a month`}</h5>
+        <p>{`You're getting a premiere every day and over 1,000 movies on demand. Just ${
+          props.amount
+        } a month.`}</p>
         <p>{`Due on: ${props.nextRenewalDate}`}</p>
         <Button colour="purple" href="" disabled={false}>
           Cancel Pass

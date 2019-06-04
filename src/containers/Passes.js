@@ -23,8 +23,9 @@ class Passes extends Component {
       />
     ));
 
-    const suggestedPasses = this.props.suggestedMonthlySubscriptions.map(
-      (suggestedPass, index) => (
+    const suggestedPasses = this.props.suggestedMonthlySubscriptions
+      .filter(pass => pass.available === true)
+      .map((suggestedPass, index) => (
         <SuggestedPass
           suggestedPass={suggestedPass}
           key={index}
@@ -33,8 +34,7 @@ class Passes extends Component {
             (price, index) => price.recurring
           )}
         />
-      )
-    );
+      ));
 
     return (
       <div>
