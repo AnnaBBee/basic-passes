@@ -2,7 +2,7 @@ import React from 'react';
 import './index.scss';
 import Layout from '@nowtv/nowtv-web-toolkit/src/react/components/Layout/Layout.react';
 import Header from '@nowtv/nowtv-web-toolkit/src/react/components/Header/Header.react';
-// import Faq from '@nowtv/nowtv-web-toolkit/src/react/components/Faq/Faq.react';
+import Faq from '@nowtv/nowtv-web-toolkit/src/react/components/Faq/Faq.react';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import Passes from './containers/Passes';
@@ -27,16 +27,50 @@ function App() {
             <Passes />
           </section>
         </Layout.Content>
-        {/* <Layout.FAQ>
+        <Layout.FAQ>
           <Faq
             faqs={[
-              { title: 'A helpful title', content: 'Some content' },
-              { title: 'Another helpful title', content: 'Some more content' }
+              {
+                title: 'What is a pass?',
+                content:
+                  'A NOW TV Pass is your ticket to the latest movies, unmissable TV shows and exclusive sports. All without a contract.'
+              },
+              {
+                title: 'How do I buy a Pass?',
+                content:
+                  "To buy a Pass, just click the Buy now next to the pass you want. If you use a Payment PIN you'll need to enter it before completing your order."
+              },
+              {
+                title: 'How do I cancel a Pass?',
+                content:
+                  "Cancelling a Pass is easy – just click Cancel next to the pass you don't want any more. You'll be able to keep watching until your next payment is due."
+              },
+              {
+                title: "Why can't I buy Netflix in My Account?",
+                content:
+                  "Although the Netflix app is available on most NOW TV Boxes and Smart Sticks, it's completely separate from NOW TV. So you'll need to create a separate account with Netflix if you want to watch their shows."
+              },
+              {
+                title: 'How do I manage my Netflix streaming membership?',
+                content:
+                  "Log in to the Netflix website , where you'll be able to manage your account and find help if you need it."
+              },
+              {
+                title: 'How do I apply a voucher?',
+                content:
+                  "If you've got a NOW TV voucher you can apply it right away: Click Apply a voucher next to the pass you're interested in. Enter your voucher code.Click Continue."
+              },
+              {
+                title:
+                  'Can I buy a Sky Sports Day or Week Pass now and save it for later?',
+                content:
+                  " Yes, once you've bought your pass you'll be given a choice to Start watching now or Save for later. If you save for later, you can activate your pass anytime in the next 365 days. When you're ready, simply start watching any Sky Sports channel and click ACTIVATE PASS."
+              }
             ]}
             title="FAQs"
             colour="green"
           />
-        </Layout.FAQ> */}
+        </Layout.FAQ>
       </Layout>
       <FooterComponent />
     </div>

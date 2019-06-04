@@ -38,15 +38,32 @@
   border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.n-layout__faqs .n-accordion__chevron .n-svg {
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border: solid green;
+  border-width: 0 2px 2px 0;
+}
+
+.n-faq__question,
+.n-faq__item {
+  text-align: left;
 }
 
 .pass-styles {
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .subscription-name {

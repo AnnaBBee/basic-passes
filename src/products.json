@@ -2036,6 +2036,41 @@
       "offerAllowed": true,
       "upfrontAllowed": true,
       "retryWindow": false
+    },
+
+    {
+      "id": "2f964538-a46b-440d-89a1-07eecdb1d789",
+      "startDate": "2019-05-21T11:32:12Z",
+      "state": "ACTIVE",
+      "nextRenewalDueDate": "2019-06-21T11:32:11Z",
+      "nextRenewalAmount": "11.99",
+      "currency": "GBP",
+      "product": {
+        "id": "C_005372",
+        "staticId": "CINEMA_SUBSCRIPTION_MONTH",
+        "context": {
+          "subscriptionType": "MONTHLY",
+          "startDate": "2019-05-21T11:32:12Z",
+          "nextRenewalDueDate": "2019-06-21T11:32:11Z",
+          "paymentType": "PAYMENT",
+          "staticId": "CINEMA_SUBSCRIPTION_MONTH",
+          "isIncluded": "False"
+        }
+      },
+      "entitlements": ["c0c298c5-c56a-413d-8123-06a87e0cb0a4"],
+      "allowedOperations": [
+        "AGENT_CANCEL",
+        "UPDATE_PRODUCT",
+        "UPDATE_SUBSCRIPTION",
+        "DELETE",
+        "SYSTEM_CANCEL",
+        "USER_CANCEL",
+        "IMMEDIATE_CANCEL",
+        "TRANSFER_CANCEL"
+      ],
+      "offerAllowed": true,
+      "upfrontAllowed": true,
+      "retryWindow": false
     }
   ],
   "currentEntitlements": [
