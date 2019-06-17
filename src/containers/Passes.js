@@ -5,14 +5,14 @@ import SuggestedPass from '../components/suggestedPass';
 
 class Passes extends Component {
   render() {
-    console.log(
-      'this.props.subscriptionNameArr',
-      this.props.subscriptionNameArr
-    );
-    console.log(
-      'this.props.suggestedMonthlySubscriptions',
-      this.props.suggestedMonthlySubscriptions
-    );
+    // console.log(
+    //   'this.props.subscriptionNameArr',
+    //   this.props.subscriptionNameArr
+    // );
+    // console.log(
+    //   'this.props.suggestedMonthlySubscriptions',
+    //   this.props.suggestedMonthlySubscriptions
+    // );
     const passes = this.props.subscriptionNameArr.map((pass, index) => (
       <Pass
         pass={pass}

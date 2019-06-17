@@ -7,10 +7,8 @@ import variables from '../styles/variables.scss';
 
 export default class SuggestedPass extends Component {
   render() {
+    // console.log('this.props', this.props);
     const props = this.props;
-    console.log('suggestedPass.category', this.props.suggestedPass.category);
-    console.log(variables.sports);
-
     let theme;
     let themeBg;
     let chevronColor;
@@ -31,7 +29,7 @@ export default class SuggestedPass extends Component {
       case 'HAYU':
         theme = { color: variables.hayu };
         themeBg = { backgroundColor: variables.hayu };
-        chevronColor = 'hayu';
+        chevronColor = 'hayu-pink';
         break;
 
       case 'ENTERTAINMENT':
@@ -74,7 +72,7 @@ export default class SuggestedPass extends Component {
           Start free trial
         </Button>
         <Accordion colour={chevronColor} type="chevron-bottom">
-          <AccordionItem svgicon="false">
+          <AccordionItem>
             <AccordionContent>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
