@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Pass from '../components/Pass';
-import SuggestedPass from '../components/suggestedPass';
+import Pass from '../../components/Pass/Pass';
+import SuggestedPass from '../../components/SuggestedPass/suggestedPass';
 
-class Passes extends Component {
+export class Passes extends Component {
   render() {
     // console.log(
     //   'this.props.subscriptionNameArr',
@@ -13,6 +13,7 @@ class Passes extends Component {
     //   'this.props.suggestedMonthlySubscriptions',
     //   this.props.suggestedMonthlySubscriptions
     // );
+
     const passes = this.props.subscriptionNameArr.map((pass, index) => (
       <Pass
         pass={pass}
@@ -37,7 +38,7 @@ class Passes extends Component {
       ));
 
     return (
-      <div>
+      <div className="container">
         <h2>Your Passes</h2>
         <ul>{passes}</ul>
         <h2>You might also like</h2>

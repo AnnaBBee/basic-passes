@@ -3,7 +3,7 @@ import Button from '@nowtv/nowtv-web-toolkit/src/react/components/Button/Button.
 import Accordion from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/Accordion.react';
 import AccordionItem from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/AccordionItem.react';
 import AccordionContent from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/AccordionContent.react';
-import variables from '../styles/variables.scss';
+import variables from '../../styles/variables.scss';
 
 export default class SuggestedPass extends Component {
   render() {
