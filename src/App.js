@@ -5,7 +5,7 @@ import Header from '@nowtv/nowtv-web-toolkit/src/react/components/Header/Header.
 import Faq from '@nowtv/nowtv-web-toolkit/src/react/components/Faq/Faq.react';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
-import Passes from './containers/Passes';
+import Passes from './containers/Passes/Passes';
 
 function App() {
   return (

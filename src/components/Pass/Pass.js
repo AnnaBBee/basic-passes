@@ -3,19 +3,21 @@ import Button from '@nowtv/nowtv-web-toolkit/src/react/components/Button/Button.
 import Accordion from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/Accordion.react';
 import AccordionItem from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/AccordionItem.react';
 import AccordionContent from '@nowtv/nowtv-web-toolkit/src/react/components/Accordion/AccordionContent.react';
-import variables from '../styles/variables.scss';
 
-export default class SuggestedPass extends Component {
+
+
+
+import variables from '../../styles/variables.scss';
+
+export default class Pass extends Component {
   render() {
     const props = this.props;
-    console.log('suggestedPass.category', this.props.suggestedPass.category);
-    console.log(variables.sports);
-
+    console.log('this.props', this.props);
     let theme;
     let themeBg;
     let chevronColor;
 
-    switch (this.props.suggestedPass.category) {
+    switch (this.props.pass.category) {
       case 'SPORTS':
         theme = { color: variables.sports };
         themeBg = { backgroundColor: variables.sports };
@@ -31,7 +33,7 @@ export default class SuggestedPass extends Component {
       case 'HAYU':
         theme = { color: variables.hayu };
         themeBg = { backgroundColor: variables.hayu };
-        chevronColor = 'hayu';
+        chevronColor = 'hayu-pink';
         break;
 
       case 'ENTERTAINMENT':
@@ -67,13 +69,17 @@ export default class SuggestedPass extends Component {
     return (
       <div className="pass-styles">
         <h5 style={theme} className="subscription-name">
-          {props.suggestedSubscriptionName}
+          {props.subscriptionName}
         </h5>
-        <h5>{`£${props.nextRenewalDateS} a month`}</h5>
+        <h5>{`£${props.amount} a month`}</h5>
+        <p>{`You're getting a premiere every day and over 1,000 movies on demand. Just ${
+          props.amount
+        } a month.`}</p>
+        <p>{`Due on: ${props.nextRenewalDate}`}</p>
         <Button style={themeBg} href="" disabled={false}>
-          Start free trial
+          Cancel Pass
         </Button>
-        <Accordion colour={chevronColor} type="chevron-bottom">
+        <Accordion type="chevron-bottom" colour={chevronColor}>
           <AccordionItem svgicon="false">
             <AccordionContent>
               <p>

@@ -1,11 +1,11 @@
-@import '../nowtv-web-toolkit/dist/fonts';
-@import './styles/variables.scss';
-@import './style.scss';
-@import '../node_modules/@nowtv/nowtv-web-toolkit/src/styles/components/icons.scss';
+@import '~@nowtv/nowtv-web-toolkit/dist/fonts';
+@import '~@nowtv/nowtv-web-toolkit/dist/styleguide';
+@import './styles/variables';
+@import './styles/style';
 
+//@import '~node_modules/@nowtv/nowtv-web-toolkit/src/styles/components/icons.scss';
 
 body {
   margin: 0;
   padding: 0;
 }
-
